@@ -1,0 +1,31 @@
+<div class="mt-4">
+    <div class="row">
+        <div class="col-lg-3" style="display: flex; flex-direction: column;">
+            <ul>
+                <li>
+                    <a href="#gem">Ngọc tướng {{course.name}}</a>
+                </li>
+                <li>
+                    <a href="#sign">Phù hiệu tướng {{course.name}}</a>
+                </li>
+                <li>
+                    <a href="#equipment">Bộ trang bị tướng {{course.name}}</a>
+                </li>
+            </ul>
+            <button type="button" class="btn btn-primary">Show Now</button>
+        </div>
+        <div class="col-lg-9">
+            <h2>Hướng Dẫn Chơi Tướng {{course.name}}</h2>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/{{course.videoId}}" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <p>{{course.description}}</p>
+            <h2 id="gem">Ngọc tướng {{course.name}}</h2>
+            <p>{{course.gemRed}}</p>
+            <p>{{course.gemViolet}}</p>
+            <p>{{course.gemGreen}}</p>
+            <h2 id="sign">Phù hiệu tướng {{course.name}}</h2>
+            <img class="card-img-top" src="{{course.imgSign}}">
+            <h2 id="equipment">Bộ trang bị tướng {{course.name}}</h2>
+            <img class="card-img-top" src="{{course.imgEquipment}}">
+        </div>
+    </div>
+</div>
